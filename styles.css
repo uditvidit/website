@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Darker gradient */
+    color: #ecf0f1; /* Light text color for contrast */
+    box-shadow: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+.container-about {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient background */
+    padding: 2rem;
+    border-radius: 8px;
+    color: #ecf0f1; /* Light text color for contrast */
+}
+
+.profile-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    border-radius: 10%;
+    border: 5px solid #1abc9c; /* Teal border for a standout effect */
+    width: 150px; /* Adjust size as needed */
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+.about-content {
+    flex: 2;
+    max-width: 800px;
+    margin-left: 2rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(44, 62, 80, 0.9); /* Slightly transparent dark blue-gray */
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, #16a085, #1abc9c); /* Teal gradient */
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.header-content {
+    text-align: center;
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Darker gradient */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 3rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.header-content p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+section {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #2c3e50, #34495e); /* Consistent dark gradient */
+}
+
+section:nth-child(even) {
+    background: linear-gradient(180deg, #34495e, #2c3e50); /* Slightly lighter for variation */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #16a085; /* Teal accent */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+h2:hover::after {
+    width: 100px;
+}
+
+.education-item,
+.experience-item,
+.strength-list li {
+    background: #19232e; /* Darker background for items */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.education-item:hover,
+.experience-item:hover,
+.strength-list li:hover {
+    background: #081e341f; /* Slightly lighter on hover */
+    transform: scale(1.02);
+}
+
+.strength-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background: rgba(44, 62, 80, 0.9); /* Consistent with navbar */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

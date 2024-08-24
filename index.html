@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Udit Maheshwari - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.js">
+
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <div class="navbar">
             <div class="container">
                 <h1>Udit Maheshwari</h1>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About me</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#strengths">Strengths</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
+     
         <div class="header-content">
             <h1>Welcome to Udit Maheshwari's Portfolio</h1>
             <p>Passionate Healthcare Professional & Mentor</p>
         </div>
+       
     </header>
+
 
     <section id="about">
         <div class="container-about">
@@ -110,5 +120,13 @@
             <p>&copy; 2024 Udit Maheshwari. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar ul');
+            const hamburger = document.querySelector('.hamburger');
+            navbar.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
